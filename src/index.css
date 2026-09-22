@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-main: #F5F6F2;
+    --bg-surface-1: #FFFFFF;
+    --bg-surface-2: #EFEFEA;
+    --border-subtle: #DDE0DA;
+    --border-hover: #C3C8BF;
+    --accent-primary: #2454FF;
+    --accent-teal: #0E9384;
+    --accent-success: #159F6B;
+    --accent-warning: #C2790A;
+    --accent-danger: #D0334C;
+    --text-primary: #15181D;
+    --text-secondary: #4B5157;
+    --text-muted: #7A8087;
+  }
+
+  body {
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    font-family: 'Outfit', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    letter-spacing: -0.011em;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-heading {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    letter-spacing: -0.02em;
+    text-transform: none !important;
+  }
+
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Precision Surface Card System */
+.surface-card {
+  background-color: #FFFFFF;
+  border: 1px solid #DDE0DA;
+  border-radius: 6px;
+  box-shadow: none;
+}
+
+.surface-card-hover {
+  transition: border-color 0.15s ease-in-out;
+}
+
+.surface-card-hover:hover {
+  border-color: #C3C8BF;
+}
+
+/* CAD Viewfinder / Precision Corner Tick Bracket Device */
+.corner-tick {
+  position: relative;
+}
+
+.corner-tick::before,
+.corner-tick::after {
+  content: '';
+  position: absolute;
+  pointer-events: none;
+  z-index: 10;
+  width: 6px;
+  height: 6px;
+}
+
+/* Top-Left & Bottom-Right Brackets */
+.corner-tick::before {
+  top: -1px;
+  left: -1px;
+  border-top: 2px solid #2454FF;
+  border-left: 2px solid #2454FF;
+}
+
+.corner-tick::after {
+  bottom: -1px;
+  right: -1px;
+  border-bottom: 2px solid #2454FF;
+  border-right: 2px solid #2454FF;
+}
+
+/* Circuit Teal Surface treatment for AI-generated components */
+.ai-surface {
+  background-color: #FFFFFF;
+  border: 1px solid #C2EEE8;
+  border-left: 3px solid #0E9384;
+  border-radius: 6px;
+}
+
+.ai-badge {
+  background-color: #E6F7F5;
+  color: #0E9384;
+  border: 1px solid #99E3D8;
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+/* Custom Precision Scrollbars */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #F5F6F2;
+}
+::-webkit-scrollbar-thumb {
+  background: #DDE0DA;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C3C8BF;
+}

@@ -1,0 +1,33 @@
+[
+  {
+    "id": "usr_divyansh_01",
+    "name": "Divyansh Thakur",
+    "email": "divyansh@schemastudio.dev",
+    "passwordHash": "thakur123",
+    "role": "Lead Database Architect",
+    "institution": "SRMIST KTR",
+    "cgpa": "7.8",
+    "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80",
+    "createdAt": "2026-09-21T10:00:00.000Z"
+  },
+  {
+    "id": "usr_sarah_02",
+    "name": "Sarah Jenkins",
+    "email": "sarah@techcorp.io",
+    "passwordHash": "sarah123",
+    "role": "Principal Staff DBA",
+    "institution": "TechCorp Cloud",
+    "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=120&q=80",
+    "createdAt": "2026-09-22T14:30:00.000Z"
+  },
+  {
+    "id": "usr_demo_03",
+    "name": "Guest Developer",
+    "email": "demo@schemastudio.dev",
+    "passwordHash": "demo123",
+    "role": "Full Stack Engineer",
+    "institution": "Hackathon Studio",
+    "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=80",
+    "createdAt": "2026-09-22T18:00:00.000Z"
+  }
+]
