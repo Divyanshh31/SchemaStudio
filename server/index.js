@@ -431,6 +431,10 @@ app.post('/api/ai/synthetic-data', async (req, res) => {
   res.json({ table, rows: rows.slice(0, numRows) });
 });
 
-app.listen(PORT, () => {
-  console.log(`SchemaStudio Backend Server v3.0 running at http://localhost:${PORT}`);
-});
+if (!process.env.VERCEL) {
+  app.listen(PORT, () => {
+    console.log(`SchemaStudio Backend Server v3.0 running at http://localhost:${PORT}`);
+  });
+}
+
+export default app;
